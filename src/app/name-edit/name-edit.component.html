@@ -1,0 +1,6 @@
+<label for="name">Name: </label>
+<input type="text" name="name" id="name" [formControl]="name">
+<p>Value: {{name.value}}</p>
+
+<button (click)="updateName()">Update Name</button>
+<router-outlet></router-outlet>
